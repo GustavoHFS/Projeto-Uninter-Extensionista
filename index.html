@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Gestão de Resíduos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Gestão de Resíduos</h1>
+    <nav>
+      <button onclick="mudarPagina('home')">Início</button>
+      <button onclick="mudarPagina('sistema')">Registrar Ponto</button>
+      <button onclick="mudarPagina('pontos')">Pontos Cadastrados</button>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section id="home" class="pagina ativa">
+      <h2>Bem-vindo ao Projeto de Gestão de Resíduos</h2>
+      <div class="intro">
+        <p>Nosso objetivo é auxiliar comunidades carentes a organizarem melhor a coleta e separação dos resíduos, promovendo um ambiente mais limpo, saudável e sustentável.</p>
+        <img src="img/logo-reciclagem.png" alt="Logo reciclagem">
+      </div>
+
+      <h3>Objetivos do Projeto:</h3>
+      <ul>
+        <li>Facilitar a coleta e o descarte correto dos resíduos</li>
+        <li>Promover a conscientização ambiental</li>
+        <li>Melhorar as condições sanitárias nas comunidades</li>
+        <li>Incentivar a criação de pontos de coleta comunitários</li>
+      </ul>
+
+      <h3>ODS relacionados:</h3>
+      <ul>
+        <li>ODS 6 - Água potável e saneamento</li>
+        <li>ODS 11 - Cidades e comunidades sustentáveis</li>
+        <li>ODS 12 - Consumo e produção responsáveis</li>
+      </ul>
+    </section>
+
+    <section id="sistema" class="pagina">
+      <h2>Registrar Novo Ponto de Coleta</h2>
+      <p>Cadastre abaixo um local de acúmulo de resíduos na sua comunidade:</p>
+      <form>
+        <label>Nome do local:</label>
+        <input type="text" placeholder="Ex: Praça João da Silva"><br>
+        <label>Endereço:</label>
+        <input type="text" placeholder="Ex: Rua das Flores, nº 100"><br>
+        <label>Tipo de resíduo:</label>
+        <select>
+          <option>Orgânico</option>
+          <option>Reciclável</option>
+          <option>Perigoso</option>
+        </select><br>
+        <button type="submit">Registrar</button>
+      </form>
+    </section>
+
+    <section id="pontos" class="pagina">
+        <h2>Pontos Cadastrados</h2>
+        <p>Pontos reais nas comunidades do Totó e Coqueiral:</p>
+        <ul class="lista-pontos">
+          <li><strong>Ponto Totó A</strong> – Rua Ana Carneiro D'Albuquerque, Totó — <em>Orgânico</em></li>
+          <li><strong>Ponto Totó B</strong> – Rua Juvêncio Marques da Cunha, Totó — <em>Reciclável</em></li>
+          <li><strong>Ponto Coqueiral</strong> – Rua Cocal, Coqueiral — <em>Perigoso</em></li>
+        </ul>
+      </section>
+      
+  </main>
+
+  <footer>
+    <p>Projeto de Extensão - Gustavo H. F. da Silva</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
